@@ -1,3 +1,9 @@
+:root {
+    --primany-color: rgb(99, 45, 149);
+    --accent-color: rgb(224, 204, 234);
+    --font-size: 2rem;
+}
+
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
@@ -21,23 +27,64 @@ header img {
 
 header span {
     font-size: 1.2rem;
-    color: blueviolet;
+    color: var(--primany-color);
 }
 
 /* hamburger nav */
 .hamburger {
-    background-color: none;
     border: none;
-    color: blueviolet;
+    color: var(--primany-color);
+    background-color: transparent;
     cursor: pointer;
 }
 
 .hamburger::before {
     content: "\2630";
-    font-size: 2rem;
+    font-size: var(--font-size);
 }
 
 .hamburger.show::before {
     content: "\00D7";
-    font-size: 2rem;
+    font-size: var(--font-size);
 }
+
+/* nav */
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primany-color);
+}
+
+.navigation a {
+    display: block;
+    padding: .9rem 10px;
+    text-decoration: none;
+    color: white;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current {
+    background-color: #ddd;
+}
+
+.navigation a:hover {
+    background-color: var(--accent-color);
+    color: var(--primany-color);
+}
+
+/* footer */
+footer {
+    background-color: #ddd;
+    padding: 1rem 10px;
+    text-align: center;
+}
+

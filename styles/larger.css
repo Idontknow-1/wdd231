@@ -1,3 +1,7 @@
+:root {
+    --primany-color: rgb(99, 45, 149);
+}
+
 @media only screen and (min-width: 600px) {
     header, main, nav, footer {
         max-width: 900px;
@@ -10,5 +14,22 @@
     
     .hamburger {
         display: none;
+    }
+
+    /* nav */
+    .navigation {
+        display: block;
+        border-bottom: 1px solid #ddd;
+    }
+
+    nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--primany-color);
+    padding: 5px;
+    }
+
+    .navigation a {
+        border: none;
     }
 }
