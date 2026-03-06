@@ -1,0 +1,40 @@
+:root {
+    --primany-color: rgb(99, 45, 149);
+}
+
+@media only screen and (min-width: 850px) {
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    header {
+        grid-template-columns: 24px auto;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+
+    /* nav */
+    .navigation {
+        display: block;
+        border-bottom: 1px solid #ddd;
+    }
+
+    nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--primany-color);
+    padding: 5px;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .navigation li.current {
+        color: var(--primary-color);
+        background-color: none;
+    }
+}
