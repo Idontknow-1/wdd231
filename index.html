@@ -19,13 +19,13 @@
     <nav id="nav-bar" class="navigation">
         <ul>
             <li class="current"><a href="#">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="#">Final</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
         </ul>
     </nav>
     <main>
         <h1>Home</h1>
-        <section>
+        <section class="about-sec">
             <h2>About Me</h2>
             <p class="about">My name is Iztamaude Mera-Lagos, but I go by Izta, pronounced East-a.
                 I am 29 and I live in Casa Grande, Arizona. I am married and have a 6 month
@@ -37,8 +37,15 @@
             <h2>Student Photo</h2>
             <img src="images/iztamaudemera-lagos.webp" alt="Iztamaude Mera Photo" loading="lazy" width="200px">
         </section>
-        <section>
+        <section class="courses">
             <h2>Web Certificate Courses</h2>
+            <div class="filter-btns">
+                <button id="all">All Courses</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="course-cont"></div>
+            <p id="total"></p>
         </section>
     </main>
     <footer>

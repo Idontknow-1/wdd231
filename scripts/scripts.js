@@ -86,7 +86,37 @@ const courses = [
         ],
         completed: false
     }
-]
+];
+
+function displayCourses(filteredCourses) {
+    const container = document.querySelector('#course-cont');
+    container.innerHTML = "";
+
+    filteredCourses.forEach(course=> {
+        const card = document.createElement("div");
+        card.classList.add("course-card");
+
+        if (course.completed) {
+            card.classList.add("completed");
+        }
+
+        card.textContent = `${course.subject} ${course.number}`;
+        container.appendChild(card);
+    });
+
+    const total = filteredCourses.reduce((sum, course) => sum + course.credits, 0); 
+    document.querySelector('#total').textContent = `The total credits for course listed above is ${total} `;
+}
+
+document.querySelector('#all').addEventListener('click', () => displayCourses(courses));
+document.querySelector('#cse').addEventListener('click', () => {
+    displayCourses(courses.filter(c => c.subject === 'CSE'));
+});
+document.querySelector('#wdd').addEventListener('click', () => {
+    displayCourses(courses.filter(c => c.subject === 'WDD'));
+});
+
+displayCourses(courses);
 
 // footer copyright and last modified
 const yearSpan = document.getElementById('currentyear');
