@@ -1,0 +1,23 @@
+{
+    "family_name": "Lagos",
+    "move_in_date": "2021-10-27",
+    "family_number": 3,
+    "visited_by_bishopric": false,
+    "family_members": [
+        {
+            "name": "Dallin Alberto Lagos Borda",
+            "gender": "Male",
+            "birthdate": "1999--01-15"
+        },
+        {
+            "name": "Iztamaude Mera-Lagos",
+            "gender": "Female",
+            "birthdate": "1996-10-13"
+        },
+        {
+            "name": "Mathayus Uhtred Lagos",
+            "gender": "Male",
+            "birthdate": "2025-08-16"
+        }
+    ]
+}
