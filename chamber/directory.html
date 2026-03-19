@@ -10,8 +10,48 @@
     <link rel="icon" href="images/favicon.ico">
     <meta property="og:image" content="https://idontknow-1.github.io/wdd231/chamber/images/hero.webp">
     <meta property="og:url" content="https://idontknow-1.github.io/wdd231/chamber/directory.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <img src="images/cg-logo.svg" alt="Casa Grande Logo" width="48" height="48" class="logo">
+        <span>Casa Grande Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Main Menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+    <main></main>
+    <footer>
+        <div class="chamber-info">
+            <span>Casa Grande Chamber of Commerce</span>
+            <p>1234 E. Casa Grande RD.
+                <br>Casa Grande, AZ 85122
+                <br>info@cgchamber.org 
+                <br>(520)123-4567
+            </p>
+        </div>
+        <div class="social">
+            <a href="https://facebook.com/" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16"
+                    height="16"></a>
+            <a href="https://www.linkedin.com/in/iztamaudemera/" target="_blank"><img src="images/linkedin.svg"
+                    alt="LinkedIn" width="16" height="16"></a>
+            <a href="https://www.instagram.com/izta1013?igsh=MWh3NGh6ZjNsNTdmMw%3D%3D&utm_source=qr"
+                target="_blank"><img src="images/instagram.svg" alt="Instagram" width="16" height="16"></a>
+        </div>
+        <p>WDD231 Class Project
+            <br>Iztamaude Mera-Lagos
+            <br>&copy;<span id="currentyear"></span> Casa Grande Chamber of Commerce
+        </p>
+        <span id="lastModified"></span>
+    </footer>
 </body>
 </html>
