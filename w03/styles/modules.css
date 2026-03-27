@@ -1,4 +1,28 @@
-* {
+.card {
+  border: 1px solid #555;
+  background-color: #eee;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card h2 {
+  color: #000;
+  margin: 5px;
+}
+
+.card #description {
+  text-transform: capitalize;
+  color: #000;
+  margin: 5px 0;
+}
+
+.card #temperature {
+  font-size: 2rem;
+  color: #4b4949;
+  margin: 5px 0;
+}
+
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -92,4 +116,4 @@ th {
 
 tr:hover {
   background-color: #bbb;
-}
+} */
