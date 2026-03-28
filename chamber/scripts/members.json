@@ -5,7 +5,7 @@
             "address": "2174 Florence Blvd, Casa Grande, Az 85122",
             "phone": "(520) 183-4597",
             "website": "https://dallinskarate.com",
-            "image": "karate.webp",
+            "image": "images/karate.webp",
             "membershiplevel": 3,
             "otherinfo": ""
         },
@@ -14,7 +14,7 @@
             "address": "1645 N Trekell Rd, Casa Grande, Az 85193",
             "phone": "(520) 491-9433",
             "website": "https://sites.google.com/machiteahouse.com/machiteahouse",
-            "image": "machiteahouse.webp",
+            "image": "images/machiteahouse.webp",
             "membershiplevel": 2,
             "otherinfo": ""
         },
@@ -23,7 +23,7 @@
             "address": "1278 E. Avenida Isabela, Casa Grande, Az 85122",
             "phone": "(602) 487-2942",
             "website": "https://lamerameranails.com",
-            "image": "meranails.webp",
+            "image": "images/meranails.webp",
             "membershiplevel": 3,
             "otherinfo": ""
         },
@@ -32,7 +32,7 @@
             "address": "519 E Florence Blvd, Casa Grande, AZ 85122",
             "phone": "(520) 421-7111",
             "website": "https://bigwa.com",
-            "image": "bigwa.webp",
+            "image": "images/bigwa.webp",
             "membershiplevel": 1,
             "otherinfo": ""
         },
@@ -41,7 +41,7 @@
             "address": "8273 E Cottonwood, Casa Grande, Az 85125",
             "phone": "(520) 849- 7263",
             "website": "https://freshcarwash.com",
-            "image": "carwash.webp",
+            "image": "images/carwash.webp",
             "membershiplevel": 1,
             "otherinfo": ""
         },
@@ -50,7 +50,7 @@
             "address": "1801 N Pinal Ave, Casa Grande, Az 85122",
             "phone": "(520) 426-4266",
             "website": "https://places.singleplatform.com/the-airport-tavern/menu?ref=google",
-            "image": "tavern.webp",
+            "image": "images/tavern.webp",
             "membershiplevel": 3,
             "otherinfo": ""
         },
@@ -59,7 +59,7 @@
             "address": "1375 E Florence Blvd #147, Casa Grande, Az 85122",
             "phone": "(520) 688-1140",
             "website": "https://grandeshopscg.com",
-            "image": "grandeshop.webp",
+            "image": "images/grandeshop.webp",
             "membershiplevel": 2,
             "otherinfo": ""
         }

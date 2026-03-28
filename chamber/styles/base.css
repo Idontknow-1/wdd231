@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #df9f29;
-    --secondary-color: #cbb284;
+    --primary-color: #a8771d;
+    --secondary-color: #836f4a;
     --accent1-color: white;
     --accent-color: black;
 }
@@ -90,6 +90,105 @@ header span {
     color: var(--primary-color);
 }
 
+.info {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+}
+
+/* hero */
+.hero img {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+/* weather */
+.weather-card {
+    display: flex;
+    margin: 10px 0;
+    max-width: 300px;
+}
+
+#weather-icon {
+    width: 75px;
+    height: 75px;
+    background: transparent;
+}
+
+#current-temp {
+    font-weight: bold;
+}
+
+/* forecast */
+.forecast {
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+#forecast-list {
+    padding: 10px 15px;
+}
+
+.forecast-item {
+    margin: 15px 0;
+    padding-bottom: 5px;
+}
+
+.forecast-item strong {
+    font-weight: bold;
+}
+
+/* cards */
+.menu {
+    display: none;
+    margin: 10px 0;
+    justify-content: center;
+    gap: 10px;
+}
+
+.grid section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+
+.card-header {
+    border-bottom: 1px solid var(--primary-color);
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.card-header h3 {
+    margin: 0;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.grid section img {
+  width: 130px;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid var(--secondary-color);
+}
+
+.card-info p {
+    margin: 5px 0;
+}
+
+.card-info strong {
+    text-transform: uppercase;
+}
+
 /* footer */
 footer {
     padding: 10px;
@@ -123,24 +222,4 @@ footer {
 .social img {
     width: 50px;
     height: 50px;
-}
-
-/* cards */
-.menu {
-    display: none;
-    margin: 10px 0;
-    justify-content: center;
-    gap: 10px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-}
-
-.grid section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
