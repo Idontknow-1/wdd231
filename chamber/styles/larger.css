@@ -5,9 +5,10 @@
     --accent-color: black;
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 680px) {
     header, main, nav, footer {
-        max-width: 100%;
+        width: 100%;
+        max-width: 900px;
         margin: 0 auto;
     }
 
@@ -47,8 +48,7 @@
 
     /* main */
     main {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
     }
 
     /* footer */
@@ -59,58 +59,17 @@
         align-items: center;
     }
 
-    /* grid and list */
-    .menu {
-        display: flex;
-        justify-content: center;
-        margin: 1rem 0;
-        gap: 10px;
-    }
-
-    .grid {
+    /* Info */
+    .info {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
-        padding: 10px;
     }
 
-    #cards {
-        width: 100%;
-    }
-
-    #cards.list {
-        display: flex;
-        flex-direction: column;
+    .event, .weather, .forecast {
         border: 1px solid var(--secondary-color);
+        border-radius: 5px;
+        margin: 10px;
     }
 
-    #cards.list section {
-        display: grid;
-        grid-template-columns: 2fr 1.5fr 1fr 1fr; 
-        align-items: center;
-        padding: 15px 10px;
-        margin: 0;
-        text-align: left;
-        border-bottom: 1px solid var(--secondary-color);
-    }
-
-    #cards.list section img { 
-        display: none; 
-    }
-
-    #cards.list section h3 {
-        font-size: 1rem;
-        margin: 0;
-    }
-
-    #cards.list section p {
-        font-size: 0.85rem;
-        margin: 0;
-    }
-
-    #cards section {
-        border: 1px solid var(--secondary-color);
-        border-radius: 10px;
-        background-color: #eee;
-    }
 }

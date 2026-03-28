@@ -90,25 +90,52 @@ header span {
     color: var(--primary-color);
 }
 
+/* hero */
+.hero img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+/* info */
 .info {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
     justify-items: center;
+    padding: 0;
 }
 
-/* hero */
-.hero img {
+.event, .weather, .forecast {
+    padding: 0;
     width: 100%;
-    height: 300px;
-    border: none;
 }
+
+.info h1 {
+    color: var(--accent1-color);
+    background-color: var(--secondary-color);
+    text-align: center;
+    width: 100%;
+}
+
+div ul {
+    list-style: none;
+    padding: 10px 30px;
+}
+
+div ul li {
+    margin: 10px 0;
+    padding-bottom: 5px;
+}
+
 
 /* weather */
 .weather-card {
     display: flex;
     margin: 10px 0;
     max-width: 300px;
+    padding: 0 30px;
 }
 
 #weather-icon {
@@ -121,14 +148,14 @@ header span {
     font-weight: bold;
 }
 
-/* forecast */
-.forecast {
-    max-width: 300px;
-    margin: 20px auto;
+.weather-main p {
+    margin: 10px 0;
+    padding-bottom: 5px;
 }
 
+/* forecast */
 #forecast-list {
-    padding: 10px 15px;
+    padding: 10px 30px;
 }
 
 .forecast-item {
@@ -141,52 +168,70 @@ header span {
 }
 
 /* cards */
-.menu {
-    display: none;
-    margin: 10px 0;
-    justify-content: center;
-    gap: 10px;
-}
-
-.grid section {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 10px;
-}
-
-.card-header {
-    border-bottom: 1px solid var(--primary-color);
-    margin-bottom: 15px;
-    padding-bottom: 5px;
-}
-
-.card-header h3 {
-    margin: 0;
-}
-
-.card-content {
-    display: flex;
-    align-items: center;
+#spotlight-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 20px;
-    text-align: left;
-    padding-bottom: 15px;
+    padding: 20px;
+    justify-items: center;
 }
 
-.grid section img {
-  width: 130px;
-  height: 100px;
-  object-fit: cover;
-  object-position: center;
-  border: 3px solid var(--secondary-color);
+.spotlight-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.spotlight-card .card-header {
+    background-color: var(--secondary-color);
+    color: #eee;
+    padding: 10px;
+    text-align: center;
+}
+
+.spotlight-card .card-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.spotlight-card .card-content {
+    display: flex;
+    padding: 15px;
+    gap: 15px;
+    align-items: center;
+}
+
+.spotlight-card img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    border: none;
+}
+
+.card-info {
+    text-align: left;
 }
 
 .card-info p {
-    margin: 5px 0;
+    margin: 4px 0;
+    font-size: 0.85rem;
+    line-height: 1.4;
 }
 
-.card-info strong {
+.membership-badge {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    font-weight: bold;
     text-transform: uppercase;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    color: #444;
 }
 
 /* footer */
