@@ -104,6 +104,10 @@ function displayCourses(filteredCourses) {
         container.appendChild(card);
     });
 
+    courseDiv.addEventListener('click', () => {
+        displayCourseDetails(course);
+    });
+
     const total = filteredCourses.reduce((sum, course) => sum + course.credits, 0); 
     document.querySelector('#total').textContent = `The total credits for course listed above is ${total} `;
 }
@@ -117,6 +121,26 @@ document.querySelector('#wdd').addEventListener('click', () => {
 });
 
 displayCourses(courses);
+
+// modal
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+        `;
+
+        courseDetails.showModal();
+
+        closeModal.addEventListener("click", () => {
+            courseDetails.close();
+        });
+}
 
 // footer copyright and last modified
 const yearSpan = document.getElementById('currentyear');

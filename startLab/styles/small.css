@@ -1,0 +1,17 @@
+*{box-sizing: border-box;}
+
+#openBtn {
+    background-color: blueviolet;
+}
+
+#dialogBox {
+    background-color: aquamarine;
+}
+
+#closeBtn {
+    background-color: blue;
+}
+
+::backdrop {
+    background-color: rgba(197, 45, 45, 0.1);
+}
