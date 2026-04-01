@@ -2,7 +2,7 @@
     --primary-color: #483107;
     --secondary-color: #554323;
     --accent1-color: white;
-    --accent-color: black;
+    --accent-color: #f6b800;
 }
 
 @media only screen and (min-width: 680px) {
@@ -49,6 +49,12 @@
     /* main */
     main {
         width: 100%;
+    }
+
+    /* hero */
+    .hero {
+    flex-direction: row;
+    justify-content: space-between;
     }
 
     /* footer */
