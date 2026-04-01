@@ -149,6 +149,12 @@ function displayForecast(data) {
 
 getForecast();
 
+// form timestamp
+const now = new Date();
+const timestamp = now.toISOString();
+
+document.querySelector('timestamp').valus = timestamp;
+
 // footer copyright and last modified
 const yearSpan = document.getElementById('currentyear');
 

@@ -48,17 +48,41 @@
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" title="Email" placeholder="email@example.com" autocomplete="on" required>
 
-            <label for=""></label>
-            <input type="tel">
+            <label for="phone">Mobile Phone Number:</label>
+            <input type="tel" name="phone" id="phone" title="Mobile Phone Number" autocomplete="tel" placeholder="123-456-7890" required>
 
-            <label for=""></label>
-            <input type="">
+            <label for="business">Business Name:</label>
+            <input type="text" required name="business" id="business" title="business" autocomplete="organization">
 
-            <label for=""></label>
-            <input type="">
+            <fieldset>
+                <legend>Select Your Membership Level:</legend>
 
-            <label for=""></label>
-            <input type="">
+                <label>
+                    <input type="radio" name="membership-level" value="np" required>
+                    NP Membership (non-profit, no fee)
+                </label>
+
+                <label>
+                    <input type="radio" name="membership-level" value="bronze">
+                    Bronze Membership
+                </label>
+
+                <label>
+                    <input type="radio" name="membership-level" value="silver">
+                    Silver Membership
+                </label>
+
+                <label>
+                    <input type="radio" name="membership-level" value="gold">
+                    Gold Membership
+                </label>
+            </fieldset>
+
+            <label for="org-desc">Business/Organisztion Description:</label>
+            <textarea name="description" id="org-desc" title="Business or Organization Description" 
+                rows="5" placeholder="Brief description of mission and services..." required></textarea>
+
+                <input type="hidden" id="timestamp" name="timestamp">
 
             <button type="submit">Join Now!</button>
         </form>
