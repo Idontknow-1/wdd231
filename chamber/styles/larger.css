@@ -1,9 +1,4 @@
-:root {
-    --primary-color: #483107;
-    --secondary-color: #554323;
-    --accent1-color: white;
-    --accent-color: #f6b800;
-}
+
 
 @media only screen and (min-width: 680px) {
     header, main, nav, footer {
