@@ -129,6 +129,7 @@ header span {
 
 .btn-join:hover {
     background-color: var(--primary-color);
+    color: var(--accent1-color);
     text-decoration: underline;
 }
 
