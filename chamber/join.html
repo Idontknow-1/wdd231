@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -33,7 +32,7 @@
             <li><a href="#">Discover</a></li>
         </ul>
     </nav>
-    <main>
+    <main id="join-page">
         <form action="thankyou.html" method="get">
             <label for="fname">First Name:</label>
             <input type="text" id="fname" name="fname" title="First Name" autocomplete="given-name" required>
@@ -108,7 +107,7 @@
         </div>
 
         <dialog id="memberModal">
-            <div></div>
+            <div id="modalContent"></div>
             <button id="closeBtn">✕</button>
         </dialog>
     </main>
@@ -135,5 +134,6 @@
         </p>
         <span id="lastModified"></span>
     </footer>
+    <script src="scripts/script.js" defer></script>
 </body>
 </html>
