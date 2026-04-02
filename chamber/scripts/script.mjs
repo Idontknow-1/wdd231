@@ -1,3 +1,5 @@
+console.log("Main script is running!");
+
 import { initForm } from "./form.mjs";
 import { initSpotlights } from "./memberspotlight.mjs";
 import { initWeather } from "./weather.mjs";

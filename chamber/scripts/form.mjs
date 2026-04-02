@@ -3,6 +3,13 @@ export function initForm() {
     const timestampField = document.querySelector('#timestamp');
         if (timestampField) {
             timestampField.value = new Date().toISOString();
+
+            const form = document.querySelector('form');
+            if (form) {
+                form.addEventListener('submit', () => {
+                    timestampField.value = new Date().toISOString();
+                });
+            }
         }
 
 // form modals
@@ -29,7 +36,7 @@ export function initForm() {
         });
     }
 
-    if (openBtn1) {
+    if (openBtn2) {
         openBtn2.addEventListener("click", () => {
             memberModalText.innerHTML = `
                 <h2>Bronze Membership</h2>
@@ -42,7 +49,7 @@ export function initForm() {
         });
     }
 
-    if (openBtn1) {
+    if (openBtn3) {
         openBtn3.addEventListener("click", () => {
             memberModalText.innerHTML = `
                 <h2>Silver Membership</h2>
@@ -56,7 +63,7 @@ export function initForm() {
         });
     }
 
-    if (openBtn1) {
+    if (openBtn4) {
         openBtn4.addEventListener("click", () => {
             memberModalText.innerHTML = `
                 <h2>Gold Membership</h2>
