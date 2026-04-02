@@ -43,10 +43,10 @@
 
             <label for="org-title">Organization Title:</label>
             <input type="text" id="org-title" name="org-title" 
-                autocomplete="organization-title" title="Minimum 7 characters. Only letters, hyphens, and spaces allowed." required>
+                autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" title="Minimum 7 characters. Only letters, hyphens, and spaces allowed." required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" title="Email" placeholder="email@example.com" autocomplete="on" required>
+            <input type="email" id="email" name="email" title="Email" placeholder="email@example.com" autocomplete="email" required>
 
             <label for="phone">Mobile Phone Number:</label>
             <input type="tel" name="phone" id="phone" title="Mobile Phone Number" autocomplete="tel" placeholder="123-456-7890" required>
