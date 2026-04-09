@@ -1,14 +1,20 @@
 :root {
-    --primary-color: #a8771d;
-    --secondary-color: #836f4a;
+    --primary-color: #8c3d16;
+    --secondary-color: #3b2f1a;
     --accent1-color: white;
-    --accent-color: #f6b800;
+    --accent-color: #f6b900a0;
 }
 
 body {
     margin: 0 auto;
     padding: 0;
     font-family: "Libre Baskerville", serif;
+}
+
+header, main, nav, footer {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
 }
 
 /* header */
@@ -427,6 +433,71 @@ dialog {
 
 .btn-return:hover {
     background-color: var(--accent-color);
+}
+
+/* discover attractions */
+.discover {
+    margin: 10px;
+    padding: 15px 0;
+    text-align: center;
+    background-color: #8c3d167d;
+    border-radius: 3px;
+}
+
+#cards-container {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-areas: 
+        "area1"
+        "area2"
+        "area3"
+        "area4"
+        "area5"
+        "area6"
+        "area7"
+        "area8";
+    border-radius: 3px;
+}
+
+.discover-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.discover-card {
+    background-color: var(--accent-color);
+    border: 1px solid #adaaaa;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.discover-card figure {
+    margin: 0 0 10px 0;
+}
+
+.discover-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.discover-card button {
+    margin-top: 10px;
+    padding: 15px;
+}
+
+#visitor-message {
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 3px;
+    font-weight: bold;
 }
 
 /* footer */

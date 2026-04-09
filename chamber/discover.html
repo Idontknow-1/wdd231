@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/script.mjs" type="module" defer></script>
+    <script src="scripts/discover.js" type="module" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -30,68 +31,14 @@
             <li class="current"><a href="index.html">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
-            <li><a href="#">Discover</a></li>
+            <li><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Discover Casa Grande</h1>
-        <div class="areas">
-            <h2>Casa Grande Neon Sign Park</h2>
-            <p><strong>Address:</strong> 408 N Sacaton St, Casa Grande, AZ 85122</p>
-            <p>The Neon Sign Park is a historic preservation of the lively town. It is operated and 
-                maintained by a non-profit organization. The park is part of the downtown
-                area.
-            </p>
-        </div>
-        <div class="areas">
-            <h2>The Museum of Casa Grande</h2>
-            <p><strong>Address:</strong> 110 W Florence Blvd #4033, Casa Grande, AZ 85122</p>
-            <p>Founded in 1964, the Museum holds historic collections of artifacts, archives, 
-                photos, and properties from Casa Grande.</p>
-        </div>
-        <div class="areas">
-            <h2>Casa Grande Ruins National Monument</h2>
-            <p><strong>Address:</strong> 1100 W. Ruins Drive Coolidge, AZ 85128</p>
-            <p>These ruins were said to be built around 1350 C.E. and is one of the largest 
-                prehistoric structures that were built by the ancestral Sonoran Desert people. 
-                In 1450, the Casa Grande was no longer in use. 
-            </p>
-        </div>
-        <div class="areas">
-            <h2>Dave White Regional Park</h2>
-            <p><strong>Address:</strong> 2121 N Thornton Rd, Casa Grande, AZ 85122</p>
-            <p>The outdoor recreation park hold various amenities for families in the area. The 
-                park contains a Dave White Golf Course, Dave White Pond, playgrounds, and courts. 
-                The courts are available for pickleball, basketball, raquetball, and volleyball.
-            </p>
-        </div>
-        <div class="areas">
-            <h2>Casa Grance Community Recreation Center</h2>
-            <p><strong>Address:</strong> 1905 N Peart Rd, Casa Grande, AZ 85122</p>
-            <p>The recreational center contains a gym, basketball court, indoor track, gaming 
-                section, and various classes for families in the community. A small fee helps 
-                keep this place running and clean. Family packs available.
-            </p>
-        </div>
-        <div class="areas">
-            <h2>EOS Fitness</h2>
-            <p><strong>Address:</strong> 1214 E Florence Blvd #1, Casa Grande, AZ 85122</p>
-            <p>Newly opened fitness center that provides sauna, outdoor workout area, cinema 
-                machine area, and much more.
-            </p>
-        </div>
-        <div class="areas">
-            <h2>Promanade at Casa Grande</h2>
-            <p><strong>Address:</strong> 1005 N Promenade Pkwy, Casa Grande, AZ 85194</p>
-            <p>Promenade is an outdoor mall with many restaurants to enjoy, shopping stores, 
-                and events. Every Saturday there is a market for vendors.
-            </p>
-        </div>
-        <div class="areas">
-            <h2>Archery Range City of Casa Grande</h2>
-            <p><strong>Address:</strong> 400 E Rodeo Rd, Casa Grande, AZ 85122</p>
-            <p>Hidden gem for archers of many ages. Free range and spacious.</p>
-        </div>
+        <h1 class="discover">Discover Casa Grande</h1>
+        <div id="visitor-message"></div>
+        
+        <div id="cards-container"></div>
     </main>
     <footer>
         <div class="chamber-info">

@@ -3,7 +3,7 @@
 @media only screen and (min-width: 680px) {
     header, main, nav, footer {
         width: 100%;
-        max-width: 900px;
+        max-width: 1200px;
         margin: 0 auto;
     }
 
@@ -80,4 +80,78 @@
         margin: 10px;
     }
 
+    /* discover */
+    #cards-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "area1"
+            "area2"
+            "area3"
+            "area4"
+            "area5"
+            "area6"
+            "area7"
+            "area8";
+    }
+
+    .discover-card img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+        transition: 0.3s ease;
+    }
+
+    .discover-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: auto auto auto auto;
+        gap: 15px;
+        align-items: center;
+        text-align: left;
+    }
+
+    .discover-card figure {
+        grid-column: 1;
+        grid-row: 1 / 5; 
+        margin: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .discover-card h2, 
+    .discover-card address, 
+    .discover-card p, 
+    .discover-card button {
+        grid-column: 2;
+        margin: 5px 0;
+    }
+
+    .discover-card img {
+        height: 100%;
+        width: 100%;
+        min-height: 400px;
+        object-fit: cover;
+    }
+
+}
+
+@media (min-width: 1025px) {
+    #cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "area1 area2"
+            "area3 area4"
+            "area5 area6"
+            "area7 area8";
+    }
+
+    .discover-card {
+        display: grid;
+        grid-template-columns: 1fr 200px; 
+        grid-template-rows: auto auto auto auto;
+        gap: 15px;
+        align-items: center;
+        text-align: left;
+    }
 }
