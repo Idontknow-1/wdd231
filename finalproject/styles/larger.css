@@ -1,0 +1,33 @@
+@media only screen and (min-width: 680px) {
+    .hamburger {
+        display: none;
+    }
+    .navigation {
+        display: block;
+    }
+    .navigation ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav {
+        background-color: var(--primary-color);
+        padding: 10px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        align-items: start;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .cards h1 {
+        grid-column: 1 / span 2; 
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
