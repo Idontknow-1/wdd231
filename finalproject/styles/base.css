@@ -2,9 +2,8 @@
     --header-font: "Caveat Brush", cursive, serif;
     --reg-font: "Nunito Sans", sans-serif;
     --primary-color: #a72270;
-    --prim-color: #a722702d;
-    --secondary-color: #ebe126;
-    --sec-color: #ebe12686;
+    --prim-color: #eac7db;
+    --secondary-color: #f2eea0;
     --accent1-color: #030209;
     --accent2-color: #fff;
 }
@@ -78,7 +77,7 @@ header span {
 }
 
 .navigation a:hover {
-    background-color: var(--sec-color);
+    background-color: var(--secondary-color);
     color: var(--accent-color);
     border: 1px solid var(--primary-color);
 }
@@ -110,6 +109,26 @@ header span {
     content: "\00D7";
     font-size: 3rem;
     color: var(--primary-color);
+}
+
+/* Home */
+main {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    padding-bottom: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-hummi, .care-provider {
+    margin: 10px;
+    text-align: center;
+}
+
+.about-hummi img, .care-provider img {
+    width: 400px;
+    border: 3px solid var(--primary-color);
+    border-radius: 10px;
 }
 
 /* footer */
@@ -233,7 +252,7 @@ input:required:valid {
 }
 
 .card button:hover {
-    background-color: var(--sec-color);
+    background-color: var(--secondary-color);
     color: var(--accent1-color);
 }
 

@@ -1,14 +1,26 @@
 @media only screen and (min-width: 680px) {
+    #menu {
+        display: none;
+    }
+
     .hamburger {
         display: none;
     }
     .navigation {
-        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
     .navigation ul {
         display: flex;
         justify-content: center;
         gap: 20px;
+        list-style: none;
+        padding: 0;
+    }
+
+    .navigation a {
+        border-bottom: none;
     }
 
     nav {
@@ -16,6 +28,50 @@
         padding: 10px;
     }
 
+    body {
+        margin: 0 auto;
+    }
+
+    /* hero */
+    #hero {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* home */
+    .about-hummi, .care-provider {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 0 20px;
+        text-align: center;
+        text-indent: 20px;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .about-hummi h1, .care-provider h1 {
+        grid-column: 1 / 3;
+    }
+
+    .about-hummi img {
+        grid-column: 1 / 2;
+        width: 100%;
+        max-width: 500px;
+        height: 500px;
+        object-fit: cover;
+        object-position: -350px;
+    }
+
+    .about-hummi p, .care-provider p {
+        margin: 0 10px;
+        width: auto;
+        max-width: 400px;
+    }
+
+    /* enrollment */
     .cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -30,4 +86,6 @@
         text-align: center;
         margin-bottom: 20px;
     }
+
+
 }
