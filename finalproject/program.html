@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Hummi Home Child Care - Program & Schedule Page</title>
     <meta name="description" content="WDD231 | Iztamaude Mera | Final Project for Hummi Business">
     <meta name="author" content="Iztamaude Mera-Lagos">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hummi Home Child Care - Program & Schedule">
+    <meta property="og:description" content="Explore our daily schedule and learning activities at Hummi Home Child Care.">
+    <meta property="og:image" content="https://yourdomain.com/images/hummilogo.webp">
+    <meta property="og:url" content="https://yourdomain.com/program.html">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/script.mjs" type="module" defer></script>
     <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,14 +27,17 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="program.html">Program</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="program.html">Program</a></li>
             <li><a href="enrollment.html">Enrollment</a></li>
         </ul>
     </nav>
     <main>
         <section>
             <img src="images/childrenlearning.webp" alt="Children learning" loading="lazy" width="1000px" id="hero-slide" class="hero-full">
+        </section>
+        <section>
+            <p id="visit-count"></p>
         </section>
         <section class="schedule-container">
             <h1>Daily Program Schedule</h1>
@@ -54,6 +62,10 @@
                     <tr><td>2:30 PM – 3:00 PM</td><td>Dismissal & Pick-up ✌️</td></tr>
                 </tbody>
             </table>
+        </section>
+        <section class="gallery-section">
+            <h2>Our Learning Activities</h2>
+            <div id="activity-gallery" class="grid-container"></div>
         </section>
     </main>
     <footer>

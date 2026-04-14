@@ -36,7 +36,7 @@
         right: 50%;
         margin-left: -50vw;
         margin-right: -50vw;
-        object-fit: cover; /* Keeps the children from looking stretched */
+        object-fit: cover;
         height: 500px;
     }
 
@@ -87,5 +87,15 @@
         margin-bottom: 20px;
     }
 
-
+    #hero-slide {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        height: 500px;
+        object-fit: cover;
+        display: block;
+    }
 }
