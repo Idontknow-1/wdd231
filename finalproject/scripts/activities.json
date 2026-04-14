@@ -1,0 +1,17 @@
+[
+  { "id": 1, "name": "Sensory Bin", "category": "Sensory", "age": "1-3 yrs", "benefit": "Tactile development" },
+  { "id": 2, "name": "Finger Painting", "category": "Art", "age": "1-3 yrs", "benefit": "Fine motor skills" },
+  { "id": 3, "name": "Story Time", "category": "Literacy", "age": "All", "benefit": "Language acquisition" },
+  { "id": 4, "name": "Block Building", "category": "STEM", "age": "2-3 yrs", "benefit": "Spatial awareness" },
+  { "id": 5, "name": "Outdoor Tag", "category": "Physical", "age": "2-3 yrs", "benefit": "Gross motor skills" },
+  { "id": 6, "name": "Water Play", "category": "Science", "age": "1-3 yrs", "benefit": "Physics exploration" },
+  { "id": 7, "name": "Music & Movement", "category": "Music", "age": "All", "benefit": "Rhythm and coordination" },
+  { "id": 8, "name": "Shape Sorting", "category": "Math", "age": "1-2 yrs", "benefit": "Problem solving" },
+  { "id": 9, "name": "Nature Walk", "category": "Science", "age": "All", "benefit": "Observational skills" },
+  { "id": 10, "name": "Bubble Pop", "category": "Physical", "age": "1-2 yrs", "benefit": "Hand-eye coordination" },
+  { "id": 11, "name": "Playdough Sculpting", "category": "Art", "age": "2-3 yrs", "benefit": "Hand strength" },
+  { "id": 12, "name": "Animal Sounds", "category": "Language", "age": "1-2 yrs", "benefit": "Phonetic awareness" },
+  { "id": 13, "name": "Puzzles", "category": "Cognitive", "age": "2-3 yrs", "benefit": "Critical thinking" },
+  { "id": 14, "name": "Color Matching", "category": "Math", "age": "1-2 yrs", "benefit": "Visual discrimination" },
+  { "id": 15, "name": "Kitchen Roleplay", "category": "Social", "age": "2-3 yrs", "benefit": "Imaginative play" }
+]
