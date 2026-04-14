@@ -1,8 +1,12 @@
 // imports
 import { initEnroll } from "./enrollment.mjs";
+import { initThankYou } from "./thankyou.mjs";
+import { initHeroSlide } from "./heroslide.mjs";
 
 // call
 initEnroll();
+initThankYou();
+initHeroSlide();
 
 // nav button
 const navButton = document.querySelector('#ham-btn');

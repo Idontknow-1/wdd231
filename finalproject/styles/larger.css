@@ -28,16 +28,16 @@
         padding: 10px;
     }
 
-    body {
-        margin: 0 auto;
-    }
-
     /* hero */
     #hero {
-        width: 100%;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        object-fit: cover; /* Keeps the children from looking stretched */
         height: 500px;
-        object-fit: cover;
-        object-position: center;
     }
 
     /* home */
