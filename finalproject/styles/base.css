@@ -65,8 +65,9 @@ header span {
     display: block;
     padding: .9rem 10px;
     text-decoration: none;
-    color: white;
-    border-bottom: solid 1px #ddd;
+    color: var(--accent2-color);
+    font-weight: 700;
+    border-bottom: solid 2px var(--accent2-color);
     background-color: var(--primary-color);
 }
 
