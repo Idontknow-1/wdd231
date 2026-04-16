@@ -329,11 +329,10 @@ dialog {
     text-align: center;
 }
 
-.schedule-table {
+.schedule-container .schedule-table {
     width: 100%;
+    background-color: var(--accent2-color);
     border-collapse: collapse;
-    background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     border-radius: 10px;
     overflow: hidden;
 }
